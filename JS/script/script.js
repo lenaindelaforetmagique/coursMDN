@@ -11,7 +11,8 @@ if (parfumGlace === 'Chocolat') {
 /**/
 
 var body = document.querySelector('html');
-body.onmouseover = function(event) {
+//body.onmouseover = function(event) {
+body.onclick = function(event) {
   var titre = document.querySelector('p');
 
   var rect = titre.getBoundingClientRect();
