@@ -10,6 +10,25 @@ if (parfumGlace === 'Chocolat') {
 }
 /**/
 
+var body = document.querySelector('html');
+body.onmouseover = function(event) {
+  var titre = document.querySelector('p');
+
+  var rect = titre.getBoundingClientRect();
+  var dx = -(event.clientX - (rect.x + rect.width / 2)) / 100;
+  var dy = -(event.clientY - (rect.y + rect.height / 2)) / 100;
+  titre.style.textShadow = dx + "px " + dy + "px 1px black";
+  //console.log(titre.getBoundingClientRect()); //event.clientX);
+
+}
+// body.onmouseout = function() {
+//   var titre = document.querySelector('h1');
+//   titre.style.textShadow = "0px 0px 0px black";
+//
+// }
+
+
+
 var logo = document.querySelector('img.logo');
 var cptClic = 0;
 logo.onclick = function() {
