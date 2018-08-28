@@ -1,0 +1,76 @@
+html {
+  background-color: #00539F;
+  font-size: 10px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+body {
+  width: 600px;
+  margin: 15px auto;
+  /* haut-bas=0, gauche-droite=auto */
+  background-color: #FF9500;
+  padding: 0 20px 20px 20px;
+  /*haut, droite, bas, gauche*/
+  border: 5px solid black;
+}
+
+h1 {
+  margin: 0;
+  padding: 20px 0;
+  color: #00539F;
+  text-shadow: 300px 150px 10px green;
+  font-size: 60px;
+  text-align: center;
+}
+
+p, li {
+  font-size: 16px;
+  line-height: 2;
+  letter-spacing: 1px;
+}
+
+header {
+  text-align: right
+}
+
+img {
+  height: 60px;
+  display: block;
+  margin: 0 auto;
+}
+
+/* padding : espace directement autour
+border : limite de padding
+margin : marge autour de border
+ */
+
+/* body {
+  max-width: 700px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: blue;
+  width: 500px;
+  background: yellow;
+  align-right;
+}
+
+p {
+  font-family: 'Ubuntu', sans-serif;
+  color: red;
+  width: 500px;
+  border: 1px solid black;
+  align-right;
+}
+
+.mini-intro {
+  color: gray;
+}
+
+a {
+  color: green;
+}
+
+a:hover {
+  color: red;
+} */
