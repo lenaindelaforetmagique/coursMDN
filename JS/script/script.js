@@ -18,7 +18,7 @@ objet.onclick = function() {
   document.querySelector('p.compteur').textContent = 'Vous avez cliqué ' + cptClic + ' fois !';
   var img = document.querySelector('img.logo')
   var src = img.getAttribute('src');
-  src = 'images./firefox-icon-' + cptClic % 4 + '.png'
+  src = 'images/firefox-icon-' + cptClic % 4 + '.png'
 
   img.setAttribute('src', src);
 
