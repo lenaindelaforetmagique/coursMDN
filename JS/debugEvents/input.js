@@ -1,9 +1,6 @@
 var nop = function() {};
 
 Input = function(dom) {
-
-  this.spyEvent = nop;
-
   this.handle_mousedown = nop;
   this.handle_mousemove = nop;
   this.handle_mouseup = nop;

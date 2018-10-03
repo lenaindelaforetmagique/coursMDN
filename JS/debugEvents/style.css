@@ -13,7 +13,10 @@ text {
 #container {
   margin: 0;
   padding: 0;
-  background: #EEEEEE;
+  position: absolute;
+  left: 0px;
+  top: 0px;
   height: 100%;
   overflow: hidden;
+  background: #EEEEEE;
 }
