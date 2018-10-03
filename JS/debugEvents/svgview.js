@@ -19,7 +19,7 @@ SVGView.prototype.putMsg = function(string) {
   var thiz = this;
   let domObj = document.createElement("p");
   domObj.textContent = `${string}`;
-  // removeDOMChildren(thiz.container);
+  removeDOMChildren(thiz.container);
   thiz.container.appendChild(domObj);
 }
 
@@ -129,13 +129,24 @@ SVGView.prototype.touchInput = function() {
 
   this.input.handle_touchstart = function(e) {
     thiz.input.spyEvent(e, thiz.input.touchMsg(e));
+    let curPos = thiz.input.getTouchPos(e.touches);
+    thiz.input.savePos(curPos.x, curPos.y);
+    let size = thiz.input.getTouchSize(e.touches);
+    thiz.input.saveTouchSize(size);
   };
 
   this.input.handle_touchmove = function(e) {
     thiz.input.spyEvent(e, thiz.input.touchMsg(e));
+    let curPos = thiz.input.getTouchPos(e.touches);
+    thiz.input.savePos(curPos.x, curPos.y);
+    let size = thiz.input.getTouchSize(e.touches);
+    thiz.input.saveTouchSize(size);
   };
 
   this.input.handle_touchend = function(e) {
     thiz.input.spyEvent(e, thiz.input.touchMsg(e));
+    thiz.input.resetPos();
+    thiz.input.resetTouchSize();
+
   };
 };
